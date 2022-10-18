@@ -1,9 +1,12 @@
-#   метод - выдать ошибка ввода
-from pyexpat import model
+import logger
+import model
 
-
+# метод - выдать ошибка ввода
 def error_value():
-    return print ('ошибка ввода') 
+    logger.logger('Ошибка ввода данных')
+    return print('Ошибка ввода данных')
 
+
+# метод - выдать результа
 def print_total():
-    return print (f'Результат: {model.total}')
+    return print(f'{model.strA}  = {model.total}')

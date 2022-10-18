@@ -1,14 +1,12 @@
 import controller
 import model
 import view
+import re
 
-# проводит глобальные переменные, через метод ИНИТ
-while 1:
-    model.init
-    model.operation()
+while True:# ВАЖНО ЗАЦИКЛИВАЕТ РАБОТУ ПРИЛОЖЕНИЯ(НЕ ВЫХОДИТ)
+    model.string_init()
+    model.total_init()
     view.print_total()
-
-
-
+    
 
 
